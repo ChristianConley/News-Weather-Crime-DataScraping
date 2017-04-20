@@ -1,7 +1,8 @@
 #This is a simulation of how likely it is to win the lottery as well as the powerball. On average, there is a 1 in 292 million chance
 #of winning the powerball. Therefore, it's unlikely the simulation will return a powerball winner unless you run this about 300,000,000 
-# times. Which I don't recommend, as it would take hours or possibly days for your computer to run. Instead, you can run the line in 
-# the 'for-loop' to rig the system and pick a winning ticket, forcing a match. This is done just to confirm the simulator works.
+# times. Which, I don't recommend as it would take hours or possibly days for your computer to run. Instead, you can un-commment-out and
+#run the lines in the 'for-loop' to rig the system and pick a winning ticket, forcing a match. This is done just to confirm the 
+# simulator works.
 
 
 
@@ -43,7 +44,7 @@ for (i in 1:total_tix_sold)
   }
 }
 
-#these next lines calculate and stae your probabilty of winning both the lotto as well as the powerball 
+#these next lines calculate and state your probabilty of winning both the lotto as well as the powerball 
 #(matching lotto numbers and powerball number). If you cheated above and 'rigged' the system by un-commenting-out
 # the 'cheat' lines, these numbers should indicate all tickets sold won.
 chance_jackpot<- jackpots / total_tix_sold 
