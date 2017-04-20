@@ -7,20 +7,21 @@
 
 
 
-#the range of possible number picked for each lotto number 
+#the range of possible numbers picked for each lotto number 
 vec<- c(1:69)
 #range of possible powerball numbers picked
 pb_vec<- c(1:26)
-#Selects 5 numbers without replacement. These are the winning lottery numbers a ticket has to much completely to win.
+#Selects 5 numbers without replacement. These are the winning lottery numbers a ticket has to match completely to win.
 lotto_pick_win<-sample(vec, 5, replace = FALSE)
 #Winning powerball number you have to match in addition to the lottery numbers to get the powerball.
 powerball_num_win<- sample(pb_vec, 1)
 winningtickets<- 0
 jackpots<- 0
-#The number of lottery tickets sold. The more you put, the longer the script takes to run. Can take days if set to realistic ticket sales.
+#The number of lottery tickets sold. The more you put, the longer the script takes to run. Can take days if set to 
+#realistic ticket sales.
 total_tix_sold<-30000
 
-
+#'for-loop' simulating x number of tickets sold.
 for (i in 1:total_tix_sold)
 {
   #use following line to test function is working (simulates your ticket matching the winning lotto numbers)
