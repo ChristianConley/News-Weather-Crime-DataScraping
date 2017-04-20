@@ -1,2 +1,2 @@
 # R
-This repository contains two scripts: the first for scraping the day's news and weather, then email it to your gmail account. The second script is a work in progress for scraping the new local crimes reported in the past day.
+This repository contains several scripts: the first for scraping the day's news and weather, then emailing it to your gmail account. Another which simulates the odds of winning the lottery based on how many tickets you purchase (spoiler: you aren't going to win). Another script determines the overall accuracy of 6 different normality algorithms at correctly classifying thousands of samples drawn from a normal population as being normally distributed.
